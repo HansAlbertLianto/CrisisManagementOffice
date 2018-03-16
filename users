@@ -1,0 +1,21 @@
+{
+	"users": [
+		{
+			"name": "Jill Smith",
+			"e-mail": "jillsmith@gmail.com",
+			"joined": "Dec 12, 1967"
+		},
+
+		{
+			"name": "Albert Lianto",
+			"e-mail": "lianto.albert28@gmail.com",
+			"joined": "Nov 5, 1999"
+		},
+
+		{
+			"name": "Vincent Lianto",
+			"e-mail", "hvlianto@gmail.com",
+			"joined", "Oct 3, 2000"
+		}
+	]
+}
