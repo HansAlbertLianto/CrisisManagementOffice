@@ -193,15 +193,84 @@
                     </table>
 
                     <div class="pull-right">
-                      <button type="button" class="btn btn-primary">Add to existing crisis</button>
-                      <button type="button" class="btn btn-success">Add to new crisis</button>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addExistingModal">Add to existing crisis</button>
+                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newModal">Add to new crisis</button>
                     </div>
-              </div>
+
               </div>
 
           </div>
-        </div>
+
       </div>
+
+                <div id="deleteModal" class="modal fade" role="dialog">
+                <div class="model-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Warning!</h4>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure you want to delete these incidents?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No, cancel</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, I'm sure</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <div id="addExistingModal" class="modal fade" role="dialog">
+                <div class="model-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Choose the crisis you want to relate these incidents to.</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                       <label for="sel1">Select crisis:</label>
+                       <select class="form-control" id="sel1">
+                          <option>Fire at NTU</option>
+                          <option>Shooting at NUS</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Add to crisis</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <div id="newModal" class="modal fade" role="dialog">
+                <div class="model-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Enter the details of this new crisis:</h4>
+                    </div>
+                    <div class="modal-body">
+                    <div class="form-group">
+                      <label for="crisistitle">Crisis Title:</label>
+                      <input type="text" class="form-control" id="crisistitle">
+                    </div>
+                    <div class="form-group">
+                      <label for="crisisdesc">Crisis Description:</label>
+                      <input type="text" class="form-control" id="crisisdesc">
+                    </div>   
+                    </div>                   
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Create new crisis</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
     </section>
 
     <footer id="footer">
