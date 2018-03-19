@@ -94,38 +94,29 @@
                 <br>
                 <table class="table table-striped table-hover">
                       <tr>
-                        <th>Title</th>
-                        <th>Published</th>
-                        <th>Created</th>
+                        <th>Crisis ID</th>
+						<th>Title</th>
+                        <th>Date & Time (Last Known)</th>
+                        <th>Location (Last Known)</th>
                         <th></th>
                       </tr>
                       <tr>
-                        <td>Blog Post 1</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td>000002</td>
+                        <td>Fire at NTU</td>
+                        <td>16-Mar-2018, 11:13 AM</td>
+                        <td>Block N4, SCSE, NTU</td>
+                        <td><a class="btn btn-danger" data-toggle="modal" data-target="#assess">Assess</a></td>
                       </tr>
                       <tr>
-                        <td>Blog Post 2</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 3</td>
-                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 4</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
+						<td><a id ="caseID"> </a>000001</td>
+                        <td>Shooting at NUS</td>
+                        <td>16-Mar-2018, 10:57 AM</td>
+                        <td>University Culture Centre</td>
+						<td><a class="btn btn-danger" data-toggle="modal" data-target="#assess">Assess</a></td>
                     </table>
               </div>
               </div>
+			
             <!-- Website Overview -->
             <div class="panel panel-default">
               <div class="panel-heading main-color-bg">
@@ -146,40 +137,94 @@
                 <br>
                 <table class="table table-striped table-hover">
                       <tr>
-                        <th>Title</th>
-                        <th>Published</th>
-                        <th>Created</th>
-                        <th></th>
+                        <th>ID</th>
+						<th>Title</th>
+                        <th>Updated Data & Time</th>
+                        <th>Abated?</th>
+						<th></th>
                       </tr>
                       <tr>
-                        <td>Blog Post 1</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td>0000020002</td>
+                        <td>Fire at NTU</td>
+                        <td>16-Mar-2018, 12:00 PM</td>
+						<td><input type="checkbox" /></td>
+						<td><a class="btn btn-danger" data-toggle="modal" data-target="#reassess">Reassess</a></td>
                       </tr>
                       <tr>
-                        <td>Blog Post 2</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 3</td>
-                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 4</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td>0000010003</td>
+                        <td>Shooting at NUS</td>
+                        <td>16-Mar-2018, 11:30 AM</td>
+                        <td> <input type="checkbox" checked /></td>
+						<td><a class="btn btn-danger" data-toggle="modal" data-target="#reassess">Reassess</a></td>
                       </tr>
                     </table>
               </div>
 
           </div>
         </div>
+		
+		<div id="assess" class="modal fade" role="dialog">
+                <div class="model-dialog model-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Case ID</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                       <p> <b>Crisis Description:</b> There is an outbreak of fire at NTU. </p>
+					   <p> <b>Crisis Detail:</b> </p>
+					   <p> <b>Latest Known Location:</b> Block N4, SCSE, NTU</p>
+					   <p> <b>Latest Known Date & Time:</b> 16-Mar-2018, 12:00 PM </p>
+					   <h3><u>Assessment</u></h3> 
+					   <p> <b>Nature Of Crisis:</b> <input type="text" class="form-control"size ="30"/></p>
+					   <p> <b>Possible Causes:</b> <input type="text" class="form-control"size ="30"/></p>
+					   <p> <b>Possible Casualities:</b> <input type="text" class="form-control" size ="30"/></p>
+					   <p> <b>Crisis Detail:</b> <input type="text" class="form-control"size ="30"/></p>
+					   <p> <b>Requirement of PMO:</b> <td><input type="radio" name="decision" value="Yes"> Yes </td><input type="radio" name="decision" value="No">No</p>
+					   <p> <b>Further Comments :</b> <input type="text" class="form-control" size ="30"/></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Submit Assessment</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			 </div>
+			  
+			  
+			  <div id="reassess" class="modal fade" role="dialog">
+                <div class="model-dialog model-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Update ID</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                       <p><b>Crisis Involved:</b> Fire at NTU </p>
+					   <p><b>Update Commander:</b> </p>
+					   <p><b>Update Date & Time :</b> Block N4, SCSE, NTU</p>
+					   <p><b>Update Message:</b> 16-Mar-2018, 12:00 PM </p>
+					   <p><b>Crisis Abated?: </b> <select> <option value="Yes">Yes</option><option value="No">No</option> </select></p>
+					   <h3><u>Reassessment</u></h3> 
+					   <p><b>Nature Of Crisis:</b> <input type="text" class="form-control"size ="30"/></p>
+					   <p><b>Possible Causes:</b> <input type="text" class="form-control"size ="30"/></p>
+					   <p><b>Possible Casualities:</b> <input type="text" class="form-control" size ="30"/></p>
+					   <p><b>Crisis Detail:</b> <input type="text" class="form-control"size ="30"/></p>
+					   <p><b>Requirement of PMO:</b> <td><input type="radio" name="decision" value="Yes"> Yes </td><input type="radio" name="decision" value="No">No</p>
+					   <p><b>Further Comments :</b> <input type="text" class="form-control" size ="30"/></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Submit Reassessment</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
         </div>
@@ -242,5 +287,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script>
+           $(document).ready(function() {
+    $(":checkbox").bind("click", false);
+});
+        </script>
   </body>
 </html>
