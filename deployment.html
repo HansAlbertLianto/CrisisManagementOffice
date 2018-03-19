@@ -64,7 +64,7 @@
             <div class="list-group">
               <a href="notifications.html" class="list-group-item">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Notifications
-              </a>
+              </a>a
               <a href="crisis.html" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Crises and Updates <span class="badge">12</span></a>
               <a href="plans.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Plan Formation <span class="badge">33</span></a>
               <a href="deployment.html" class="list-group-item active main-color-bg"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Deployment <span class="badge">203</span></a>
@@ -97,38 +97,302 @@
                         <th>Email</th>
                         <th>Joined</th>
                         <th></th>
+
                       </tr>
                       <tr>
                         <td>Jill Smith</td>
                         <td>jillsmith@gmail.com</td>
                         <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td><button type = "button" class = "btn btn-default" data-toggle = "modal" data-target = "#00004">Info</button> <button type = "button" class = "btn btn-success" data-toggle = "modal" data-target = "#deployModal">Deploy</button></td>
                       </tr>
                       <tr>
                         <td>Eve Jackson</td>
                         <td>ejackson@yahoo.com</td>
                         <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td><button type = "button" class = "btn btn-default" data-toggle = "modal" data-target = "#00003">Info</button> <button type = "button" class = "btn btn-success" data-toggle = "modal" data-target = "#deployModal">Deploy</button></td>
                       </tr>
                       <tr>
                        <td>Stephanie Landon</td>
                         <td>landon@yahoo.com</td>
                         <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td><button type = "button" class = "btn btn-default" data-toggle = "modal" data-target = "#00002">Info</button> <button type = "button" class = "btn btn-success" data-toggle = "modal" data-target = "#deployModal">Deploy</button></td>
                       </tr>
                       <tr>
                         <td>Mike Johnson</td>
                         <td>mjohnson@gmail.com</td>
                         <td>Dec 15, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td><button type = "button" class = "btn btn-default" data-toggle = "modal" data-target = "#00001">Info</button> <button type = "button" class = "btn btn-success" data-toggle = "modal" data-target = "#deployModal">Deploy</button></td>
                       </tr>
                     </table>
               </div>
               </div>
 
           </div>
-        </div>
-      </div>
+
+          <div id="deployModal" class="modal fade" role="dialog">
+            <div class="model-dialog model-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                Are you sure you want to deploy this plan?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No, cancel</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Yes, I'm sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="00004" class="modal fade" role="dialog">
+            <div class="model-dialog model-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Ravid fire at NTU</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">PlanID:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">P00004</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Team Involved:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">10 fire trucks</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Description:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Extinguishing the fire</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Action:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Fire trucks spray the water to the buildings on fire through the hoses</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Date and Time:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">16-Mar-2018, 11:20 AM</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Location:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Block N4, SCSE, NTU</p>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+                <div class = "modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          <div id="00003" class="modal fade" role="dialog">
+            <div class="model-dialog model-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mass shooting in NUS</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">PlanID:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">P00003</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Team Involved:</label>
+                      <div class="col-sm-10">
+                        <ul class="form-control-static">
+                          <li>1 police helicopter</li>
+                          <li>10 armed police cars</li>
+                          <li>10 ambulances</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Description:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Protect the citizens and capture the criminals</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Action:</label>
+                      <div class="col-sm-10">
+                        <ul class = "form-control-static">
+                          <li>Helicopter locates the criminals</li>
+                          <li>8 police escort the citizens to a safe place</li>
+                          <li>The remaining police search and capture the criminals</li>
+                          <li>Ambulances bring the injured citizens to the nearest hospital</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Date and Time:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">16-Mar-2018, 11:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Location:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">University Culture Centre</p>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+                <div class = "modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          <div id="00002" class="modal fade" role="dialog">
+            <div class="model-dialog model-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">NTU SCSE found burning</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">PlanID:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">P00002</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Team Involved:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">5 fire trucks</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Description:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Extinguishing the fire</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Action:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Fire trucks spray the water to the buildings on fire through the hoses</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Date and Time:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">16-Mar-2018, 11:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Location:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Block N4, SCSE, NTU</p>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+                <div class = "modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          <div id="00001" class="modal fade" role="dialog">
+            <div class="model-dialog model-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">NUS Shooting</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">PlanID:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">P00001</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Team Involved:</label>
+                      <div class="col-sm-10">
+                        <ul class="form-control-static">
+                          <li>1 police helicopter</li>
+                          <li>10 armed police cars</li>
+                          <li>10 ambulances</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Description:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">Extinguishing the fire</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Action:</label>
+                      <div class="col-sm-10">
+                        <ul class = "form-control-static">
+                          <li>Helicopter locates the criminals</li>
+                          <li>8 police escort the citizens to a safe place</li>
+                          <li>The remaining police search and capture the criminals</li>
+                          <li>Ambulances bring the injured citizens to the nearest hospital</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Date and Time:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">16-Mar-2018, 10:55 AM</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2">Location:</label>
+                      <div class="col-sm-10">
+                        <p class="form-control-static">University Cultural Centre</p>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+                <div class = "modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+
+
     </section>
 
     <footer id="footer">
@@ -177,6 +441,8 @@
     </div>
   </div>
 </div>
+
+
 
   <script>
      CKEDITOR.replace( 'editor1' );
