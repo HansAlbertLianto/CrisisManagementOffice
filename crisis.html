@@ -94,7 +94,7 @@
                 <br>
                 <table class="table table-striped table-hover">
                       <tr>
-                        <th>Crisis ID</th>
+                        <th>CrisisID</th>
 						            <th>Title</th>
                         <th>Date & Time (Last Known)</th>
                         <th>Location (Last Known)</th>
@@ -105,14 +105,14 @@
                         <td>Fire at NTU</td>
                         <td>16-Mar-2018, 11:13 AM</td>
                         <td>Block N4, SCSE, NTU</td>
-                        <td><a class="btn btn-danger pull-right" data-toggle="modal" data-target="#000002">Assess</a></td>
+                        <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#000002">Assess</a></td>
                       </tr>
                       <tr>
 						            <td>000001</td>
                         <td>Shooting at NUS</td>
                         <td>16-Mar-2018, 10:57 AM</td>
                         <td>University Culture Centre</td>
-						            <td><a class="btn btn-danger pull-right" data-toggle="modal" data-target="#000001">Assess</a></td>
+						            <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#000001">Assess</a></td>
                     </table>
               </div>
               </div>
@@ -141,21 +141,21 @@
 						            <th>Crisis Involved</th>
                         <th>Update Date & Time</th>
                         <th>Abated?</th>
-						<th></th>
+						            <th></th>
                       </tr>
                       <tr>
                         <td>0000020002</td>
                         <td>Fire at NTU</td>
                         <td>16-Mar-2018, 12:00 PM</td>
 						            <td><input type="checkbox"/></td>
-						            <td><a class="btn btn-danger pull-right" data-toggle="modal" data-target="#0000020002">Reassess</a></td>
+						            <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#0000020002">Reassess</a></td>
                       </tr>
                       <tr>
                         <td>0000010003</td>
                         <td>Shooting at NUS</td>
                         <td>16-Mar-2018, 12:02 AM</td>
                         <td> <input type="checkbox" checked /></td>
-						            <td><a class="btn btn-danger pull-right" data-toggle="modal" data-target="#0000010003" style="display: none">Reassess</a></td>
+						            <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#0000010003" style="display: none">Reassess</a></td>
                       </tr>
                     </table>
               </div>
@@ -368,7 +368,7 @@
                         <div class="form-group">
                           <label class="control-label col-sm-4" for="email">Crisis Involved:</label>
                           <div class="col-sm-8">
-                            <p class="form-control-static">Fire at NTU.</p>
+                            <p class="form-control-static">Fire at NTU</p>
                           </div>
                         </div>
 
@@ -398,7 +398,7 @@
                         <div class="form-group">
                           <label class="control-label col-sm-4" for="email">Crisis Abated?</label>
                           <div class="col-sm-8">
-                            <p class="form-control-static">No</p>
+                            <p class="form-control-static"><input type="checkbox"/></p>
                           </div>
                         </div>
 
@@ -497,7 +497,7 @@
                         <div class="form-group">
                           <label class="control-label col-sm-4" for="email">Crisis Abated?</label>
                           <div class="col-sm-8">
-                            <p class="form-control-static">Yes</p>
+                            <p class="form-control-static"><input type="checkbox" checked /></p>
                           </div>
                         </div>
                       </form>
@@ -508,39 +508,6 @@
               </div>
             </div>
           </div>
-			  
-			  
-			       <div id="reassess" class="modal fade" role="dialog">
-                <div class="model-dialog model-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">insert UpdateID here</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-group">
-                       <p><b>Crisis Involved:</b> Fire at NTU </p>
-					             <p><b>Update Commander:</b> </p>
-          					   <p><b>Update Date & Time:</b> Block N4, SCSE, NTU</p>
-          					   <p><b>Update Message:</b>Teams have been deployed to stop the fire.</p>
-          					   <p><b>Crisis Abated?: </b> <select> <option value="Yes">Yes</option><option value="No">No</option> </select></p>
-          					   <h3><u>Reassessment</u></h3> 
-          					   <p><b>Nature Of Crisis:</b> <input type="text" class="form-control"size ="30"/></p>
-          					   <p><b>Possible Causes:</b> <input type="text" class="form-control"size ="30"/></p>
-          					   <p><b>Possible Casualities:</b> <input type="text" class="form-control" size ="30"/></p>
-          					   <p><b>Crisis Detail:</b> <input type="text" class="form-control"size ="30"/></p>
-          					   <p><b>Requirement of PMO:</b> <td><input type="radio" name="decision" value="Yes"> Yes </td><input type="radio" name="decision" value="No">No</p>
-          					   <p><b>Further Comments :</b> <input type="text" class="form-control" size ="30"/></p>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Submit Reassessment</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
     </section>
 
@@ -600,10 +567,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script>
+	  <script>
            $(document).ready(function() {
     $(":checkbox").bind("click", false);
-});
-        </script>
+    });
+    </script>
   </body>
 </html>
