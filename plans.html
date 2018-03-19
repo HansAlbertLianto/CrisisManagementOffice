@@ -92,37 +92,31 @@
                 </div>
                 <br>
                 <table class="table table-striped table-hover">
-                      <tr>
-                        <th>Title</th>
-                        <th>Published</th>
-                        <th>Created</th>
-                        <th></th>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 1</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 2</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 3</td>
-                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 4</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                    </table>
+                  <tr>
+                    <th>CrisesID</th>
+                    <th>Title</th>
+                    <th>Date & Time (Last Known)</th>
+                    <th>Location (Last Known)</th>
+                    <th>PMO Involved?</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>000002</td>
+                    <td>Fire at NTU</td>
+                    <td>16-Mar-2018, 11:13 AM</td>
+                    <td>Block N4, SCSE, NTU</td>
+                    <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    <td><a class="btn btn-default" data-toggle="modal" data-target="#formplancrisis">Form Plan</a></td>
+                  </tr>
+                  <tr>
+                    <td>000001</td>
+                    <td>Shooting at NUS</td>
+                    <td>16-Mar-2018, 10:57 AM</td>
+                    <td>University Culture Centre</td>
+                    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                    <td></td>
+                  </tr>
+                </table>
               </div>
               </div>
             <!-- Website Overview -->
@@ -144,41 +138,127 @@
                 </div>
                 <br>
                 <table class="table table-striped table-hover">
-                      <tr>
-                        <th>Title</th>
-                        <th>Published</th>
-                        <th>Created</th>
-                        <th></th>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 1</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 2</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 3</td>
-                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 4</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                    </table>
+                  <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Updated Data & Time</th>
+                    <th>Abated?</th>
+                    <th>PMO Involved?</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>0000020002</td>
+                    <td>Fire at NTU</td>
+                    <td>16-Mar-2018, 12:00 PM</td>
+                    <td><input type="checkbox" /></td><td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    <td><a class="btn btn-default" data-toggle="modal" data-target="#formplanupdates">Form Plan</a></td>
+                  </tr>
+                  <tr>
+                    <td>0000010003</td>
+                    <td>Shooting at NUS</td>
+                    <td>16-Mar-2018, 11:30 AM</td>
+                    <td> <input type="checkbox" checked /></td>
+                    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                    <td></td>
+                  </tr>
+                </table>
               </div>
 
           </div>
         </div>
+
+          <div id="formplancrisis" class="modal fade" role="dialog">
+            <div class="model-dialog model-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">CrisesID: 000002</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <p> <b>Crisis Description:</b> There is an outbreak of fire at NTU. </p>
+                    <p> <b>Crisis Detail:</b> Fire occured in Software Lab 1 from electrical socket. </p>
+                    <p> <b>Latest Known Location:</b> Block N4, SCSE, NTU</p>
+                    <p> <b>Latest Known Date & Time:</b> 16-Mar-2018, 12:00 PM </p>
+                    <p> <b>Nature Of Crisis:</b> [Input Text] </p>
+                    <p> <b>Possible Causes:</b> [Input Text] </p>
+                    <p> <b>Possible Casualties:</b> [Input Text] </p>
+                    <p> <b>Requirement of PMO:</b> <td><input type="radio" name="decision" value="Yes"> Yes </td><input type="radio" name="decision" value="No">No</p>
+                    <p> <b>Further Comments :</b> <input type="text" class="form-control" size ="30"/></p>
+                  </div>
+
+                  <div class="modal-header">
+                    <h4 class="modal-title">Plan Formation</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <p> <b>Plan ID:</b> 000123 </p>
+                      <p> <b>Title:</b> <input type="text" class="form-control"size ="30"/> </p>
+                      <p> <b>Teams Involved: </b> <input type="text" class="form-control"size ="30"/></p>
+                      <p> <b>Plan Description:</b> <input type="text" class="form-control"size ="30"/>  </p>
+                      <p> <b>Plan Action: </b> <input type="text" class="form-control"size ="30"/> </p>
+                      <p> <b>Plan Date & Time:</b><input type="text" class="form-control"size ="30"/> </p>
+                      <p> <b>Plan Location:</b> <input type="text" class="form-control"size ="30"/></p>
+                    </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit Plan</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div id="formplanupdates" class="modal fade" role="dialog">
+            <div class="model-dialog model-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">CrisesID: 000002</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <p> <b>Crisis Involved:</b> Fire at NTU </p>
+                    <p> <b>Update Commander:</b> </p>
+                    <p> <b>Update Date & Time :</b> Block N4, SCSE, NTU</p>
+                    <p> <b>Update Message:</b> 16-Mar-2018, 12:00 PM </p>
+                    <p> <b>Crisis Abated? :</b> <td><input type="checkbox" name="decision" value="Yes"> Yes </td><input type="checkbox" name="decision" value="No" checked>No</p>
+                    <h3><u>Reassessment</u></h3>
+                    <p> <b>Nature Of Crisis:</b> [Input Text] </p>
+                    <p> <b>Possible Causes:</b> [Input Text] </p>
+                    <p> <b>Possible Casualities:</b> [Input Text] </p>
+                    <p> <b>Crisis Detail:</b> [Input Text] </p>
+                    <p> <b>Requirement of PMO:</b> <td><input type="radio" name="decision" value="Yes"> Yes </td><input type="radio" name="decision" value="No">No</p>
+                    <p> <b>Further Comments :</b> <input type="text" class="form-control" size ="30"/></p>
+                  </div>
+
+                  <div class="modal-header">
+                    <h4 class="modal-title">Plan Formation</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <p> <b>Plan ID:</b> 000123 </p>
+                      <p> <b>Title:</b> <input type="text" class="form-control"size ="30"/> </p>
+                      <p> <b>Teams Involved: </b> <input type="text" class="form-control"size ="30"/></p>
+                      <p> <b>Plan Description:</b> <input type="text" class="form-control"size ="30"/>  </p>
+                      <p> <b>Plan Action: </b> <input type="text" class="form-control"size ="30"/> </p>
+                      <p> <b>Plan Date & Time:</b> <input type="text" class="form-control"size ="30"/> </p>
+                      <p> <b>Plan Location:</b> <input type="text" class="form-control"size ="30"/></p>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Submit Plan</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
       </div>
     </section>
 
