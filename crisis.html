@@ -94,38 +94,29 @@
                 <br>
                 <table class="table table-striped table-hover">
                       <tr>
-                        <th>Title</th>
-                        <th>Published</th>
-                        <th>Created</th>
+                        <th>CrisisID</th>
+						            <th>Title</th>
+                        <th>Date & Time (Last Known)</th>
+                        <th>Location (Last Known)</th>
                         <th></th>
                       </tr>
                       <tr>
-                        <td>Blog Post 1</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td>000002</td>
+                        <td>Fire at NTU</td>
+                        <td>16-Mar-2018, 11:13 AM</td>
+                        <td>Block N4, SCSE, NTU</td>
+                        <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#000002">Assess</a></td>
                       </tr>
                       <tr>
-                        <td>Blog Post 2</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 3</td>
-                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 4</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
+						            <td>000001</td>
+                        <td>Shooting at NUS</td>
+                        <td>16-Mar-2018, 10:57 AM</td>
+                        <td>University Culture Centre</td>
+						            <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#000001">Assess</a></td>
                     </table>
               </div>
               </div>
+			
             <!-- Website Overview -->
             <div class="panel panel-default">
               <div class="panel-heading main-color-bg">
@@ -146,44 +137,378 @@
                 <br>
                 <table class="table table-striped table-hover">
                       <tr>
-                        <th>Title</th>
-                        <th>Published</th>
-                        <th>Created</th>
-                        <th></th>
+                        <th>UpdateID</th>
+						            <th>Crisis Involved</th>
+                        <th>Update Date & Time</th>
+                        <th>Abated?</th>
+						            <th></th>
                       </tr>
                       <tr>
-                        <td>Blog Post 1</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td>0000020002</td>
+                        <td>Fire at NTU</td>
+                        <td>16-Mar-2018, 12:00 PM</td>
+						            <td><input type="checkbox"/></td>
+						            <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#0000020002">Reassess</a></td>
                       </tr>
                       <tr>
-                        <td>Blog Post 2</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 3</td>
-                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 4</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td>0000010003</td>
+                        <td>Shooting at NUS</td>
+                        <td>16-Mar-2018, 12:02 AM</td>
+                        <td> <input type="checkbox" checked /></td>
+						            <td><a class="btn btn-default pull-right" data-toggle="modal" data-target="#0000010003" style="display: none">Reassess</a></td>
                       </tr>
                     </table>
               </div>
 
           </div>
         </div>
+		
+		          <div id="000002" class="modal fade" role="dialog">
+                <div class="model-dialog model-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Crisis 000002</h4>
+                    </div>
+                    <div class="modal-body">
 
 
-        </div>
-      </div>
+                      <form class="form-horizontal">
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Description:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">There is an outbreak of fire at NTU.</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Details:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">
+                                <ul>
+                                  <li>It is known that the building in NTU like this is on fire, and NTU sucks. (16-Mar-2018, 11:13 AM)</li>
+                                  <li>Fog coming from the NTU SCSE building, can smell it from Canteen A in the North Spine. (16-Mar-2018, 10:56 AM)</li>
+                                </ul>
+                            </p>
+                          </div>
+                        </div>                        
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Latest Known Location:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">Block N4, SCSE, NTU</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Latest Known Date & Time:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">16-Mar-2018, 11:13 AM</p>
+                          </div>
+                        </div>
+
+                        <hr><h4 class="modal-title">Assessment</h4><hr>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Nature of Crisis:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Possible Causes:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Possible Casualties:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">PMO Involvement Required?</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">
+                                <td><input type="radio" name="decision" value="Yes">Yes</td>
+                                <td><input type="radio" name="decision" value="No">No</td>
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Further Comments:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Submit Assessment</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="000001" class="modal fade" role="dialog">
+                <div class="model-dialog model-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Crisis 000001</h4>
+                    </div>
+                    <div class="modal-body">
+
+
+                      <form class="form-horizontal">
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Description:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">There is a known shooting in UCC in NUS.</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Details:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">
+                                <ul>
+                                  <li>Observed gunshot sounds heard near the UCC theatre, people screaming. (16-Mar-2018, 10:57 AM)</li>
+                                  <li>Shotgun sounds near NUS can be heard. (16-Mar-2018, 10:55 AM)</li>
+                                </ul>
+                            </p>
+                          </div>
+                        </div>                        
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Latest Known Location:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">University Culture Centre</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Latest Known Date & Time:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">16-Mar-2018, 10:57 AM</p>
+                          </div>
+                        </div>
+
+                        <hr><h4 class="modal-title">Assessment</h4><hr>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Nature of Crisis:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Possible Causes:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Possible Casualties:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">PMO Involvement Required?</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">
+                                <td><input type="radio" name="decision" value="Yes">Yes</td>
+                                <td><input type="radio" name="decision" value="No">No</td>
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Further Comments:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Submit Assessment</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="0000020002" class="modal fade" role="dialog">
+                <div class="model-dialog model-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Update 0000020002</h4>
+                    </div>
+                    <div class="modal-body">
+
+
+                      <form class="form-horizontal">
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Involved:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">Fire at NTU</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Update Commander:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">
+                                Search and Rescue
+                            </p>
+                          </div>
+                        </div>                        
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Update Date & Time:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">16-Mar-2018, 1:13 PM</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Update Message:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">Teams have been deployed to stop the fire.</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Abated?</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="checkbox"/></p>
+                          </div>
+                        </div>
+
+                        <hr><h4 class="modal-title">Reassessment</h4><hr>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Nature of Crisis:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Possible Causes:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Possible Casualties:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">PMO Involvement Required?</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">
+                                <td><input type="radio" name="decision" value="Yes">Yes</td>
+                                <td><input type="radio" name="decision" value="No">No</td>
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Further Comments:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="text" class="form-control"/></p>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Submit reassessment</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="0000010003" class="modal fade" role="dialog">
+                <div class="model-dialog model-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Update 0000010003</h4>
+                    </div>
+                    <div class="modal-body">
+
+
+                      <form class="form-horizontal">
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Involved:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">Shooting at NUS</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Update Commander:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">
+                                Warfighter
+                            </p>
+                          </div>
+                        </div>                        
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Update Date & Time:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">16-Mar-2018, 1:23 PM</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Update Message:</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static">The enemy has been slain.</p>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-4" for="email">Crisis Abated?</label>
+                          <div class="col-sm-8">
+                            <p class="form-control-static"><input type="checkbox" checked /></p>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+
     </section>
 
     <footer id="footer">
@@ -242,5 +567,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	  <script>
+           $(document).ready(function() {
+    $(":checkbox").bind("click", false);
+    });
+    </script>
   </body>
 </html>
